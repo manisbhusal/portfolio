@@ -61,3 +61,13 @@ function type() {
 
 // start typing when page loads
 window.onload = type;
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+document.getElementById("form-msg").textContent = "Message sent successfully!";
+
+this.reset();
+
+});
